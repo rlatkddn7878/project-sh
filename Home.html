@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en"><head>
+  <div onclick="play()">
+    <audio id='audio_play' src='images/eb051b066b04117b.mp3'>
+    </audio> 
+    <script type="text/javascript"> 
+    function play() { 
+        var audio = document.getElementById('audio_play'); 
+        if (audio.paused) { 
+            audio.play(); 
+        }else{ 
+            audio.pause(); 
+            audio.currentTime = 0 
+        } 
+    } 
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Protected Page">
